@@ -27,13 +27,14 @@ def _compute_elves_total_calories(elves_calories: List[List[int]]) -> List[int]:
     return [sum(calories) for calories in elves_calories]
 
 
-def _compute_max_calories() -> int:
+def _compute_sum_top_3_calories() -> int:
     lines = _read_input_lines()
     elves_calories = _get_elves_calories_from_lines(lines)
     elves_total_calories = _compute_elves_total_calories(elves_calories)
 
-    return max(elves_total_calories)
+    sorted_total_calories = sorted(elves_total_calories, reverse=True)
+    return sum(sorted_total_calories[:3])
 
 
 def main() -> None:
-    print(_compute_max_calories())
+    print(_compute_sum_top_3_calories())
