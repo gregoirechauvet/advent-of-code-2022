@@ -1,6 +1,7 @@
 from typing import List
 
-from src.day2 import Move, Round
+from src.day2.move import Move
+from src.day2.round import Round
 
 
 def _get_shape_score(move: Move) -> int:

@@ -5,3 +5,6 @@ class Move(Enum):
     ROCK = auto()
     PAPER = auto()
     SCISSOR = auto()
+
+
+WIN_ORDER = [Move.PAPER, Move.ROCK, Move.SCISSOR]
