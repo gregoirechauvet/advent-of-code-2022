@@ -17,6 +17,7 @@ black = "^22.10.0"
 
 [tool.poetry.scripts]
 day1 = "src.day1:main"
+day2 = "src.day2:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
